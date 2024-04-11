@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Люди</title>
+</head>
+<body>
+<div class="btns">
+    <div class="btn"><a href="menu.html">Главная</a></div>
+    <div class="btn"><a href="work.html">Работа</a></div>
+    <div class="btn"><a href="login.html">Выйти?</a></div>
+</div>
+<div class="cell">
+    <div class="cards"></div>
+    <form action="api/people/" method="post">
+        <h2>Добавить человека</h2>
+        <label for="name">Имя человека:</label>
+        <input type="text" id="name" name="name" placeholder="Введите имя"  required/>
+        <label for="birthAge">Год рождения:</label>
+        <input type="number" id="birthAge" name="birthAge" placeholder="Введите год" required/>
+        <label for="phone">Номер телефона:</label>
+        <input type="text" id="phone" name="phone" placeholder="Введите номер"  required/>
+        <label for="workId">Работа:</label>
+        <select name="workId" id="workId"></select>
+<!--        <input type="text" id="workId" name="workId" placeholder="Введите ID" />-->
+        <input type="submit" id="submit"/>
+    </form>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

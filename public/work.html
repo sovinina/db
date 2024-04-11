@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Работа</title>
+</head>
+<body>
+
+<div class="btns">
+    <div class="btn"><a href="menu.html">Главная</a></div>
+    <div class="btn"><a href="people.html">Люди</a></div>
+    <div class="btn"><a href="login.html">Выйти?</a></div>
+</div>
+<div class="cell">
+    <div class="cards"></div>
+    <form action="api/work/" method="post">
+        <h2>Добавить работу</h2>
+        <label for="title">Название работы:</label>
+        <input type="text" id="title" name="title" placeholder="Введите название" required />
+        <label for="code">Код работы:</label>
+        <input type="number" id="code" name="code" placeholder="Введите код" required/>
+        <label for="pay">Размер зарплаты:</label>
+        <input type="number" id="pay" name="pay" placeholder="Введите зарплату" required/>
+        <input type="submit" id="submit"/>
+    </form>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

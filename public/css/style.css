@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    color: #1C274C;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #ffffff;
+}
+
+.cell{
+    margin-top: 20px;
+    display: flex;
+    width: fit-content;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+h2{
+    width: 320px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #94ccff;
+    padding: 20px;
+    min-height: 300px;
+    border-radius: 30px;
+}
+
+form input, form select{
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 3px 8px;
+    border-radius: 10px;
+    border: none;
+}
+
+form input::placeholder{
+}
+
+#submit{
+    padding: 10px;
+    background-color: #f0f6ff;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn{
+    background-color: #94ccff;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.btn a{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+.homePage{
+    flex-direction: column;
+    align-items: center;
+}
+
+.block{
+    background-color: #d6edff;
+    border-radius: 20px;
+    min-width: 250px;
+    padding: 20px;
+    height: fit-content;
+}
+
+.btns{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.cards{
+    display: flex;
+    max-width: 1100px;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.add{
+    height: 480px;
+}
+
+.block p{
+    margin-bottom: 5px;
+}
+.block p:last-child{
+    margin-bottom: 0;
+}
